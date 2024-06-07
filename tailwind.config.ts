@@ -25,7 +25,7 @@ const config = {
         },
         light: {
           1: '#e5fcf5',
-          2: '#8cada7ff'
+          2: '#6D8881'
         }
       },
       keyframes: {

@@ -26,7 +26,7 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center mt-0 h-1/5">
+                <div className="flex justify-center mt-0 xl:mt-16 h-1/5">
                     <div
                         className="text-2xl xl:text-3xl text-light-1 flex flex-col xl:flex-row"
                     >

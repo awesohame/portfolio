@@ -22,7 +22,7 @@ const Navbar = () => {
                             "font-medium hover:text-light-1 text-2xl",
                             {
                                 "text-light-2": link.path !== pathname,
-                                "text-light-1 border-b-2 border-light-1": link.path === pathname
+                                "text-light-1": link.path === pathname
                             }
                         )}
                     >
