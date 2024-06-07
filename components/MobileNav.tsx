@@ -14,7 +14,7 @@ const MobileNav = () => {
             <SheetTrigger className='flex justify-center items-center'>
                 <CiMenuFries className='text-[32px] text-primary-1' />
             </SheetTrigger>
-            <SheetContent className='flex flex-col backdrop-blur bg-dark-2'>
+            <SheetContent className='flex flex-col backdrop-blur-sm bg-opacity-80 bg-dark-2'>
                 <div className='mt-32 mb-40 text-center text-2xl'>
                     <SheetClose asChild>
                         <Link href='/'>

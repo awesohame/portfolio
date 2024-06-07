@@ -12,10 +12,7 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      padding: "15px",
     },
     extend: {
       colors: {
@@ -24,7 +21,7 @@ const config = {
         },
         dark: {
           1: '#000000',
-          2: '#24282d',
+          2: '#1B1E22',
         },
         light: {
           1: '#e5fcf5',
