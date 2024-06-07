@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 import { navLinks } from '@/constants';
+import { cn } from '@/lib/utils';
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -15,8 +16,15 @@ const Navbar = () => {
                     <Link
                         href={link.path}
                         key={index}
-                        className={`${link.path === pathname && 'text-primary-1 border-b-2 border-primary-1'
-                            } font-medium hover:text-primary-1 transition-all`}
+                        // className={`${link.path === pathname && 'text-primary-1 border-b-2 border-primary-1'
+                        //     } font-medium hover:text-primary-1 text-2xl text-light-2`}
+                        className={cn(
+                            "font-medium hover:text-light-1 text-2xl",
+                            {
+                                "text-light-2": link.path !== pathname,
+                                "text-light-1 border-b-2 border-light-1": link.path === pathname
+                            }
+                        )}
                     >
                         {link.name}
                     </Link>
