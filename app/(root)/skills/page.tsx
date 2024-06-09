@@ -104,16 +104,16 @@ const Others = () => {
         <section className="h-full w-full flex xl:pb-[3rem] xl:px-24">
             <Tabs
                 defaultValue="Frontend"
-                className="flex h-full w-full"
+                className="flex flex-col xl:flex-row h-full w-full"
             >
-                <TabsList className="flex flex-col h-full gap-6 justify-start w-full max-w-[280px] pr-10 border-r-2 border-light-1 rounded-none">
-                    <TabsTrigger value="Frontend" className="w-full text-2xl bg-dark-3 px-4 py-3 rounded-xl">
+                <TabsList className="flex flex-col h-full gap-6  justify-start w-full xl:max-w-[280px] xl:max-h-full max-h-[250px] pb-4 xl:pb-0 px-4 xl:px-0 xl:pr-10 xl:border-r-2 xl:border-light-1 rounded-none">
+                    <TabsTrigger value="Frontend" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
                         Frontend
                     </TabsTrigger>
-                    <TabsTrigger value="Backend" className="w-full text-2xl bg-dark-3 px-4 py-3 rounded-xl">
+                    <TabsTrigger value="Backend" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
                         Backend
                     </TabsTrigger>
-                    <TabsTrigger value="Others" className="w-full text-2xl bg-dark-3 px-4 py-3 rounded-xl">
+                    <TabsTrigger value="Others" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
                         Others
                     </TabsTrigger>
                 </TabsList>
@@ -130,7 +130,7 @@ const Others = () => {
                                     return (
                                         <TooltipProvider key={idx} delayDuration={100}>
                                             <Tooltip>
-                                                <TooltipTrigger className="w-[200px] h-[200px] bg-dark-3 rounded-2xl flex justify-center items-center group">
+                                                <TooltipTrigger className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-3 rounded-2xl flex justify-center items-center group">
                                                     <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
                                                         {skill.icon}
                                                     </div>
@@ -152,7 +152,7 @@ const Others = () => {
                                     return (
                                         <TooltipProvider key={idx} delayDuration={100}>
                                             <Tooltip>
-                                                <TooltipTrigger className="w-[200px] h-[200px] bg-dark-3 rounded-2xl flex justify-center items-center group">
+                                                <TooltipTrigger className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-3 rounded-2xl flex justify-center items-center group">
                                                     <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
                                                         {skill.icon}
                                                     </div>
@@ -174,7 +174,7 @@ const Others = () => {
                                     return (
                                         <TooltipProvider key={idx} delayDuration={100}>
                                             <Tooltip>
-                                                <TooltipTrigger className="w-[200px] h-[200px] bg-dark-3 rounded-2xl flex justify-center items-center group">
+                                                <TooltipTrigger className=" w-[150px] h-[150px] xl:w-[200px] xl:h-[200px] bg-dark-3 rounded-2xl flex justify-center items-center group">
                                                     <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
                                                         {skill.icon}
                                                     </div>
