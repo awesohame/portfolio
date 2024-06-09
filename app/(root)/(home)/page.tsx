@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { IoLogoGithub } from "react-icons/io";
+import { MdOutlineContactPage } from "react-icons/md";
 
 export default function Home() {
     return (

@@ -131,13 +131,13 @@ const Others = () => {
                                         return (
                                             <TooltipProvider key={idx} delayDuration={100}>
                                                 <Tooltip>
-                                                    <TooltipTrigger className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-3 rounded-2xl flex justify-center items-center group">
-                                                        <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
+                                                    <div className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-3 rounded-2xl flex justify-center items-center group">
+                                                        <TooltipTrigger className="text-8xl group-hover:text-primary-1 transition-all duration-300">
                                                             {skill.icon}
-                                                        </div>
-                                                    </TooltipTrigger>
+                                                        </TooltipTrigger>
+                                                    </div>
                                                     <TooltipContent>
-                                                        <p className="text-light-1">{skill.name}</p>
+                                                        <p className="text-dark-2 bg-light-1 px-4 py-3 rounded-lg">{skill.name}</p>
                                                     </TooltipContent>
                                                 </Tooltip>
                                             </TooltipProvider>

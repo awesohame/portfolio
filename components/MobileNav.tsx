@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { CiMenuFries } from 'react-icons/ci';
 
 import { navLinks } from '@/constants';
+import { cn } from '@/lib/utils';
 
 const MobileNav = () => {
     const pathname = usePathname();
@@ -31,9 +32,13 @@ const MobileNav = () => {
                             <SheetClose asChild key={idx}>
                                 <Link
                                     href={link.path}
-                                    className={`${link.path === pathname &&
-                                        'text-primary-1 border-b-2 border-primary-1'
-                                        } text-xl hover:text-primary-1 transition-all`}
+                                    className={cn(
+                                        {
+                                            'text-light-1': pathname === link.path,
+                                            'text-light-2': pathname !== link.path,
+                                        },
+                                        `text-xl hover:text-primary-1 transition-all`
+                                    )}
                                 >
                                     {link.name}
                                 </Link>
