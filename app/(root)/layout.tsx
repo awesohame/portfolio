@@ -14,9 +14,7 @@ const HomeLayout = ({ children }: { children: ReactNode }) => {
     return (
         <main className='relative'>
             <Header />
-            <div className='flex h-[calc(100vh-8.5rem)] w-full'>
-                {children}
-            </div>
+            {children}
         </main>
     )
 }

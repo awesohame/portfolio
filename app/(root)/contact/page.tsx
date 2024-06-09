@@ -2,7 +2,9 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <div>Contact</div>
+        <div className='flex h-[calc(100vh-8.5rem)] w-full'>
+            Contact
+        </div>
     )
 }
 

@@ -101,98 +101,100 @@ const skills = {
 
 const Others = () => {
     return (
-        <section className="h-full w-full flex xl:pb-[3rem] xl:px-24">
-            <Tabs
-                defaultValue="Frontend"
-                className="flex flex-col xl:flex-row h-full w-full"
-            >
-                <TabsList className="flex flex-col h-full gap-6  justify-start w-full xl:max-w-[280px] xl:max-h-full max-h-[250px] pb-4 xl:pb-0 px-4 xl:px-0 xl:pr-10 xl:border-r-2 xl:border-light-1 rounded-none">
-                    <TabsTrigger value="Frontend" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
-                        Frontend
-                    </TabsTrigger>
-                    <TabsTrigger value="Backend" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
-                        Backend
-                    </TabsTrigger>
-                    <TabsTrigger value="Others" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
-                        Others
-                    </TabsTrigger>
-                </TabsList>
-                {/* <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
+        <div className='flex h-[calc(100vh-8.5rem)] w-full'>
+            <section className="h-full w-full flex xl:pb-[3rem] xl:px-24">
+                <Tabs
+                    defaultValue="Frontend"
+                    className="flex flex-col xl:flex-row h-full w-full"
+                >
+                    <TabsList className="flex flex-col h-full gap-6  justify-start w-full xl:max-w-[280px] xl:max-h-full max-h-[250px] pb-4 xl:pb-0 px-4 xl:px-0 xl:pr-10 rounded-none">
+                        <TabsTrigger value="Frontend" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
+                            Frontend
+                        </TabsTrigger>
+                        <TabsTrigger value="Backend" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
+                            Backend
+                        </TabsTrigger>
+                        <TabsTrigger value="Others" className="w-full text-xl xl:text-2xl bg-dark-3 px-4 py-3 rounded-xl">
+                            Others
+                        </TabsTrigger>
+                    </TabsList>
+                    {/* <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
                         <TabsTrigger value="Frontend">Experience</TabsTrigger>
                         <TabsTrigger value="Backend">Education</TabsTrigger>
                         <TabsTrigger value="Others">Skills</TabsTrigger>
                     </TabsList> */}
-                <div className="w-full">
-                    <TabsContent value="Frontend">
-                        <div className="flex flex-wrap items-center justify-center gap-3">
-                            {
-                                skills.frontend.map((skill, idx) => {
-                                    return (
-                                        <TooltipProvider key={idx} delayDuration={100}>
-                                            <Tooltip>
-                                                <TooltipTrigger className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-3 rounded-2xl flex justify-center items-center group">
-                                                    <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
-                                                        {skill.icon}
-                                                    </div>
-                                                </TooltipTrigger>
-                                                <TooltipContent>
-                                                    <p className="text-light-1">{skill.name}</p>
-                                                </TooltipContent>
-                                            </Tooltip>
-                                        </TooltipProvider>
-                                    )
-                                })
-                            }
-                        </div>
-                    </TabsContent>
-                    <TabsContent value="Backend">
-                        <div className="flex flex-wrap items-center justify-center gap-3">
-                            {
-                                skills.backend.map((skill, idx) => {
-                                    return (
-                                        <TooltipProvider key={idx} delayDuration={100}>
-                                            <Tooltip>
-                                                <TooltipTrigger className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-3 rounded-2xl flex justify-center items-center group">
-                                                    <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
-                                                        {skill.icon}
-                                                    </div>
-                                                </TooltipTrigger>
-                                                <TooltipContent>
-                                                    <p className="text-light-1">{skill.name}</p>
-                                                </TooltipContent>
-                                            </Tooltip>
-                                        </TooltipProvider>
-                                    )
-                                })
-                            }
-                        </div>
-                    </TabsContent>
-                    <TabsContent value="Others">
-                        <div className="flex flex-wrap items-center justify-center gap-3">
-                            {
-                                skills.others.map((skill, idx) => {
-                                    return (
-                                        <TooltipProvider key={idx} delayDuration={100}>
-                                            <Tooltip>
-                                                <TooltipTrigger className=" w-[150px] h-[150px] xl:w-[200px] xl:h-[200px] bg-dark-3 rounded-2xl flex justify-center items-center group">
-                                                    <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
-                                                        {skill.icon}
-                                                    </div>
-                                                </TooltipTrigger>
-                                                <TooltipContent>
-                                                    <p className="text-light-1">{skill.name}</p>
-                                                </TooltipContent>
-                                            </Tooltip>
-                                        </TooltipProvider>
-                                    )
-                                })
-                            }
-                        </div>
-                    </TabsContent>
-                </div>
-            </Tabs>
+                    <div className="w-full xl:pl-10">
+                        <TabsContent value="Frontend">
+                            <div className="flex flex-wrap items-center justify-center gap-3">
+                                {
+                                    skills.frontend.map((skill, idx) => {
+                                        return (
+                                            <TooltipProvider key={idx} delayDuration={100}>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-3 rounded-2xl flex justify-center items-center group">
+                                                        <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
+                                                            {skill.icon}
+                                                        </div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent>
+                                                        <p className="text-light-1">{skill.name}</p>
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </TabsContent>
+                        <TabsContent value="Backend">
+                            <div className="flex flex-wrap items-center justify-center gap-3">
+                                {
+                                    skills.backend.map((skill, idx) => {
+                                        return (
+                                            <TooltipProvider key={idx} delayDuration={100}>
+                                                <Tooltip>
+                                                    <TooltipTrigger className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-3 rounded-2xl flex justify-center items-center group">
+                                                        <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
+                                                            {skill.icon}
+                                                        </div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent>
+                                                        <p className="text-light-1">{skill.name}</p>
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </TabsContent>
+                        <TabsContent value="Others">
+                            <div className="flex flex-wrap items-center justify-center gap-3">
+                                {
+                                    skills.others.map((skill, idx) => {
+                                        return (
+                                            <TooltipProvider key={idx} delayDuration={100}>
+                                                <Tooltip>
+                                                    <TooltipTrigger className=" w-[150px] h-[150px] xl:w-[200px] xl:h-[200px] bg-dark-3 rounded-2xl flex justify-center items-center group">
+                                                        <div className="text-8xl group-hover:text-primary-1 transition-all duration-300">
+                                                            {skill.icon}
+                                                        </div>
+                                                    </TooltipTrigger>
+                                                    <TooltipContent>
+                                                        <p className="text-light-1">{skill.name}</p>
+                                                    </TooltipContent>
+                                                </Tooltip>
+                                            </TooltipProvider>
+                                        )
+                                    })
+                                }
+                            </div>
+                        </TabsContent>
+                    </div>
+                </Tabs>
 
-        </section>
+            </section>
+        </div>
     )
 }
 
