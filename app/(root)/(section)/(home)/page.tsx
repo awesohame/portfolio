@@ -10,7 +10,7 @@ export default function Home() {
                 <div className="xl:w-[60%] h-full text-4xl xl:text-5xl gap-5 flex flex-col justify-center mt-5">
                     Hello!
                     <span className="text-3xl xl:text-4xl">
-                        I'm <span className="text-primary-1">Soham Aversekar</span>
+                        I&apos;m <span className="text-primary-1">Soham Aversekar</span>
                     </span>
                     <span className="text-lg xl:text-xl text-light-2">
                         I am a full stack developer based in Mumbai, India, currently in my second year of BE in Computer Engineering at Thadomal Shahani Engineering College. Committed to creating user-friendly websites, I am continuously expanding my technical knowledge.
