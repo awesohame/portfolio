@@ -1,5 +1,3 @@
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import React, { ReactNode } from 'react'
 import { Metadata } from 'next';
 
@@ -11,14 +9,12 @@ export const metadata: Metadata = {
     }
 };
 
-const HomeLayout = ({ children }: { children: ReactNode }) => {
+const RootLayout = ({ children }: { children: ReactNode }) => {
     return (
-        <main className='relative'>
-            <Header />
+        <div className='flex h-[calc(100vh-8.5rem)] w-full'>
             {children}
-            <Footer />
-        </main>
+        </div>
     )
 }
 
-export default HomeLayout 
+export default RootLayout 

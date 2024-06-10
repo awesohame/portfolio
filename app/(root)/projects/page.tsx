@@ -10,7 +10,7 @@ import {
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
 import { IoLogoGithub } from "react-icons/io";
-import { FaLink } from "react-icons/fa";
+import { FiExternalLink } from "react-icons/fi";
 import { CiCircleInfo } from "react-icons/ci";
 
 import { projects } from "@/constants"
@@ -51,9 +51,14 @@ const Projects = () => {
                                     <CardFooter className="flex xl:mt-auto">
                                         <TooltipProvider key={idx} delayDuration={100}>
                                             <Tooltip>
-                                                <TooltipTrigger className="text-3xl mx-3 rounded-2xl flex justify-center items-center group">
-                                                    <Link href={project.github} className="text-3xl mx-3 hover:text-primary-1">
-                                                        <IoLogoGithub />
+                                                <TooltipTrigger className="xl:mx-3 rounded-2xl flex justify-center items-center group">
+                                                    <Link href={project.github} target="_blank" rel="noopener noreferrer" className="flex gap-1 px-4 py-3 rounded-lg items-center justify-center bg-dark-2">
+                                                        <div className="flex items-center justify-center text-2xl xl:text-3xl">
+                                                            <IoLogoGithub />
+                                                        </div>
+                                                        <div className="flex items-center justify-center text-lg xl:text-xl">
+                                                            Github
+                                                        </div>
                                                     </Link>
                                                 </TooltipTrigger>
                                                 <TooltipContent className="text-light-1 bg-dark-2 px-4 py-3">
@@ -65,9 +70,14 @@ const Projects = () => {
                                         {project.demo && (
                                             <TooltipProvider key={idx} delayDuration={100}>
                                                 <Tooltip>
-                                                    <TooltipTrigger className="text-3xl mx-3 rounded-2xl flex justify-center items-center group">
-                                                        <Link href={project.demo} className="hover:text-primary-1">
-                                                            <FaLink />
+                                                    <TooltipTrigger className="xl:mx-3 rounded-2xl flex justify-center items-center group">
+                                                        <Link href={project.demo} target="_blank" rel="noopener noreferrer" className="flex gap-1 px-4 py-3 rounded-lg items-center justify-center bg-dark-2">
+                                                            <div className="flex items-center justify-center text-2xl xl:text-3xl">
+                                                                <FiExternalLink />
+                                                            </div>
+                                                            <div className="flex items-center justify-center text-lg xl:text-xl">
+                                                                Visit Site
+                                                            </div>
                                                         </Link>
                                                     </TooltipTrigger>
                                                     <TooltipContent className="text-light-2 bg-dark-2 px-4 py-3">
