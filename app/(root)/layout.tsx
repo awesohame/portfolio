@@ -5,9 +5,9 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "awesohame",
-    description: "Welcome to my Portfolio!",
+    description: "awesohame's personal website",
     icons: {
-        icon: "/next.svg",
+        icon: "/assets/icon.png",
     }
 };
 

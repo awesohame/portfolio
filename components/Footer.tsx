@@ -24,7 +24,7 @@ const contacts = [
 
 const Footer = () => {
     return (
-        <footer className="bg-dark-2 text-light-1 font-extralight py-6 text-sm">
+        <footer className="bg-dark-2 text-light-1 font-extralight py-6 text-sm mt-12">
             <div className="container mx-auto px-4">
                 <div className="flex flex-col md:flex-row justify-between items-center">
                     <div className="mb-4 md:mb-0 text-center xl:text-left">

@@ -3,15 +3,15 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
     title: "awesohame",
-    description: "Welcome to my Portfolio!",
+    description: "awesohame's personal website",
     icons: {
-        icon: "/next.svg",
+        icon: "/assets/icon.png",
     }
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
     return (
-        <div className='flex h-[calc(100vh-8.5rem)] w-full'>
+        <div className='flex xl:h-[calc(100vh-8.5rem)] w-full'>
             {children}
         </div>
     )
