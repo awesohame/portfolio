@@ -19,10 +19,10 @@ const Navbar = () => {
                         // className={`${link.path === pathname && 'text-primary-1 border-b-2 border-primary-1'
                         //     } font-medium hover:text-accent-2 text-2xl text-light-2`}
                         className={cn(
-                            "font-medium hover:text-accent-2 text-xl",
+                            "font-medium hover:text-accent-1 text-xl",
                             {
-                                "text-accent-1": link.path !== pathname,
-                                "text-accent-2": link.path === pathname
+                                "text-accent-2": link.path !== pathname,
+                                "text-accent-1": link.path === pathname
                             }
                         )}
                     >
