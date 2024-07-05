@@ -15,12 +15,12 @@ const MobileNav = () => {
             <SheetTrigger className='flex justify-center items-center'>
                 <CiMenuFries className='text-[32px] text-primary-1' />
             </SheetTrigger>
-            <SheetContent className='flex flex-col backdrop-blur-sm bg-opacity-80 bg-dark-2'>
+            <SheetContent className='flex flex-col backdrop-blur-sm bg-opacity-80 bg-dark-1'>
                 <div className='mt-32 mb-40 text-center text-2xl'>
                     <SheetClose asChild>
                         <Link href='/'>
                             <h1 className='text-4xl text-primary-1 font-semibold'>
-                                SA
+                                awesohame
                             </h1>
                         </Link>
                     </SheetClose>
@@ -37,7 +37,7 @@ const MobileNav = () => {
                                             'text-light-1': pathname === link.path,
                                             'text-light-2': pathname !== link.path,
                                         },
-                                        `text-xl hover:text-primary-1 transition-all`
+                                        `text-xl hover:text-accent-2 transition-all`
                                     )}
                                 >
                                     {link.name}

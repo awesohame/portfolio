@@ -17,12 +17,12 @@ const Navbar = () => {
                         href={link.path}
                         key={index}
                         // className={`${link.path === pathname && 'text-primary-1 border-b-2 border-primary-1'
-                        //     } font-medium hover:text-primary-1 text-2xl text-light-2`}
+                        //     } font-medium hover:text-accent-2 text-2xl text-light-2`}
                         className={cn(
-                            "font-medium hover:text-light-1 text-xl",
+                            "font-medium hover:text-accent-2 text-xl",
                             {
-                                "text-light-2": link.path !== pathname,
-                                "text-light-1": link.path === pathname
+                                "text-accent-1": link.path !== pathname,
+                                "text-accent-2": link.path === pathname
                             }
                         )}
                     >

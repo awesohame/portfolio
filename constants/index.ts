@@ -26,6 +26,14 @@ export const projects = [
         demo: 'https://vista-zoom-clone.vercel.app/',
         img: '/assets/projectimages/vista.png'
     },
+    {
+        name: 'Clean N Green',
+        desc: 'An E-commerce webapp with the goal of promoting eco-friendly products. This project was made at the hackathon DUHacks 3.0 and secured a top 15 position out of 156 participating teams from the entire nation.',
+        tags: ['Nextjs', 'Typescript'],
+        github: 'https://github.com/awesohame/33_git-push--f_DUhacks',
+        demo: 'https://devfolio.co/projects/clean-n-green-0445',
+        img: '/assets/projectimages/cleanngreen.png'
+    },
     // {
     //     name: "Discord JS Music bot",
     //     desc: "A Discord bot with music and basic moderation commands.",

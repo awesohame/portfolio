@@ -138,7 +138,7 @@ export function ContactForm() {
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className="bg-primary-1 text-dark-2">Submit</Button>
+                <Button type="submit" className="bg-primary-1 text-dark-1">Submit</Button>
             </form>
         </Form>
     )

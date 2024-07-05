@@ -42,7 +42,7 @@ const Projects = () => {
                                             {
                                                 project.tags.map((tag, idx) => {
                                                     return (
-                                                        <span key={idx} className="text-dark-2 bg-light-1 px-2 py-1 rounded-lg m-1">{tag}</span>
+                                                        <span key={idx} className="text-dark-1 bg-accent-1 px-2 py-1 rounded-lg m-1">{tag}</span>
                                                     )
                                                 })
                                             }
@@ -52,7 +52,7 @@ const Projects = () => {
                                         <TooltipProvider key={idx} delayDuration={100}>
                                             <Tooltip>
                                                 <TooltipTrigger className="xl:mx-3 rounded-2xl flex justify-center items-center group">
-                                                    <Link href={project.github} target="_blank" rel="noopener noreferrer" className="flex gap-1 px-4 py-3 rounded-lg items-center justify-center bg-dark-2">
+                                                    <Link href={project.github} target="_blank" rel="noopener noreferrer" className="flex gap-1 px-4 py-3 rounded-lg items-center justify-center bg-dark-1">
                                                         <div className="flex items-center justify-center text-2xl xl:text-3xl">
                                                             <IoLogoGithub />
                                                         </div>
@@ -61,7 +61,7 @@ const Projects = () => {
                                                         </div>
                                                     </Link>
                                                 </TooltipTrigger>
-                                                <TooltipContent className="text-light-1 bg-dark-2 px-4 py-3">
+                                                <TooltipContent className="text-light-1 bg-dark-1 px-4 py-3">
                                                     <p>View Code</p>
                                                 </TooltipContent>
                                             </Tooltip>
@@ -71,7 +71,7 @@ const Projects = () => {
                                             <TooltipProvider key={idx} delayDuration={100}>
                                                 <Tooltip>
                                                     <TooltipTrigger className="xl:mx-3 rounded-2xl flex justify-center items-center group">
-                                                        <Link href={project.demo} target="_blank" rel="noopener noreferrer" className="flex gap-1 px-4 py-3 rounded-lg items-center justify-center bg-dark-2">
+                                                        <Link href={project.demo} target="_blank" rel="noopener noreferrer" className="flex gap-1 px-4 py-3 rounded-lg items-center justify-center bg-dark-1">
                                                             <div className="flex items-center justify-center text-2xl xl:text-3xl">
                                                                 <FiExternalLink />
                                                             </div>
@@ -80,7 +80,7 @@ const Projects = () => {
                                                             </div>
                                                         </Link>
                                                     </TooltipTrigger>
-                                                    <TooltipContent className="text-light-2 bg-dark-2 px-4 py-3">
+                                                    <TooltipContent className="text-light-2 bg-dark-1 px-4 py-3">
                                                         <span className="flex items-center">
                                                             <span className="text-xl text-light-1 pr-1">
                                                                 <CiCircleInfo />

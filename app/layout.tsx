@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.className} bg-dark-2 text-light-1`}>
+      <body className={`${montserrat.className} bg-dark-1 text-light-1`}>
         {children}
         <Toaster />
       </body>
