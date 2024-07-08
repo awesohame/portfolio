@@ -101,12 +101,12 @@ const skills = {
 
 const Skills = () => {
     return (
-        <section className="h-full w-full flex xl:pb-[3rem] xl:px-24">
+        <section className="h-full w-full flex items-center xl:pb-[3rem] xl:px-24">
             <Tabs
                 defaultValue="Frontend"
                 className="flex flex-col xl:flex-row h-full w-full"
             >
-                <TabsList className="flex flex-col h-full gap-6  justify-start w-full xl:max-w-[280px] xl:max-h-full max-h-[250px] pb-4 xl:pb-0 px-4 xl:px-0 xl:pr-10 rounded-none">
+                <TabsList className="flex flex-col h-full gap-6  justify-center w-full xl:max-w-[280px] xl:max-h-full max-h-[250px] pb-4 xl:pb-0 px-4 xl:px-0 xl:pr-10 rounded-none">
                     <TabsTrigger value="Frontend" className="w-full text-xl xl:text-2xl bg-dark-2 px-4 py-3 rounded-xl">
                         Frontend
                     </TabsTrigger>
@@ -122,7 +122,7 @@ const Skills = () => {
                         <TabsTrigger value="Backend">Education</TabsTrigger>
                         <TabsTrigger value="Others">Skills</TabsTrigger>
                     </TabsList> */}
-                <div className="w-full xl:pl-10">
+                <div className="w-full xl:pl-10 flex items-center">
                     <TabsContent value="Frontend">
                         <div className="flex flex-wrap items-center justify-center gap-3">
                             {
