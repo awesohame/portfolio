@@ -17,19 +17,19 @@ const config = {
     extend: {
       colors: {
         primary: {
-          1: '#16D559',
+          1: '#30DFC4',
         },
         dark: {
-          1: '#0D1900',
-          2: '#253D2F'
+          1: '#072621',
+          2: '#13594E'
         },
         light: {
-          1: '#D6FFD1',
-          2: '#ACC9A9'
+          1: '#D6F9F3',
+          2: '#26B29D'
         },
         accent: {
-          1: '#D6FFD1',
-          2: '#94BA4F'
+          1: '#83ECDC',
+          2: '#26B29D'
         }
       },
       keyframes: {

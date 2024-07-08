@@ -35,9 +35,9 @@ const MobileNav = () => {
                                     className={cn(
                                         {
                                             "text-accent-2": link.path !== pathname,
-                                            "text-accent-1": link.path === pathname
+                                            "text-light-1": link.path === pathname
                                         },
-                                        `text-xl hover:text-accent-2 transition-all`
+                                        `text-xl hover:text-light-1 transition-all`
                                     )}
                                 >
                                     {link.name}

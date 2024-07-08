@@ -36,13 +36,13 @@ const Projects = () => {
                                         />
                                     </CardHeader>
                                     <CardContent className="my-6 xl:flex-grow">
-                                        <CardTitle className="text-2xl">{project.name}</CardTitle>
-                                        <CardDescription className="m-4 text-lg text-light-2">{project.desc}</CardDescription>
+                                        <CardTitle className="text-2xl text-light-1">{project.name}</CardTitle>
+                                        <CardDescription className="m-4 text-lg text-accent-1">{project.desc}</CardDescription>
                                         <div className="flex flex-wrap">
                                             {
                                                 project.tags.map((tag, idx) => {
                                                     return (
-                                                        <span key={idx} className="text-dark-1 bg-accent-1 px-2 py-1 rounded-lg m-1">{tag}</span>
+                                                        <span key={idx} className="text-dark-1 bg-light-1 px-2 py-1 rounded-lg m-1">{tag}</span>
                                                     )
                                                 })
                                             }

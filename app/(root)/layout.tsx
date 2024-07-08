@@ -6,16 +6,13 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
     title: "awesohame",
     description: "awesohame's personal website",
-    icons: {
-        icon: "/assets/icon.png",
-    }
 };
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
     return (
-        <main className='relative'>
+        <main className="relative flex flex-col min-h-screen">
             <Header />
-            {children}
+            <div className="flex-grow">{children}</div>
             <Footer />
         </main>
     )

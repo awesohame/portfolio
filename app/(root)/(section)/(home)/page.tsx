@@ -12,8 +12,8 @@ export default function Home() {
                     <span className="text-3xl xl:text-4xl">
                         I&apos;m <span className="text-primary-1 font-semibold">Soham Aversekar</span>
                     </span>
-                    <span className="text-lg xl:text-xl text-light-2 font-normal">
-                        I am a full stack developer based in Mumbai, India, currently in my second year of BE in Computer Engineering at Thadomal Shahani Engineering College. Committed to creating user-friendly websites, I am continuously expanding my technical knowledge.
+                    <span className="text-lg xl:text-xl text-light-1 font-normal">
+                        I am a full stack developer based in Mumbai, India, currently in my third year of BE in Computer Engineering at Thadomal Shahani Engineering College. Committed to creating user-friendly websites, I am continuously expanding my technical knowledge.
                     </span>
                 </div>
                 <div className="xl:w-[40%] flex items-center justify-end">
@@ -34,11 +34,11 @@ export default function Home() {
                 </div>
             </div>
             <div className="h-[20%] w-full flex items-center justify-center gap-4">
-                <Link href="/resume.pdf" className="flex items-center bg-accent-1 gap-2 text-black py-3 px-4 rounded-lg  hover:bg-accent-2">
+                <Link href="/resume.pdf" className="flex items-center bg-light-1 gap-2 text-black py-3 px-4 rounded-lg  hover:bg-accent-1">
                     <MdOutlineContactPage size={30} />
                     <span className="text-lg xl:text-2xl">Resume</span>
                 </Link>
-                <Link href="https://github.com/awesohame" className="flex items-center bg-accent-1 gap-2 text-dark-1 py-3 px-4 rounded-lg hover:bg-accent-2">
+                <Link href="https://github.com/awesohame" className="flex items-center bg-light-1 gap-2 text-dark-1 py-3 px-4 rounded-lg hover:bg-accent-1">
                     <IoLogoGithub size={30} />
                     <span className="text-lg xl:text-2xl">Github</span>
                 </Link>

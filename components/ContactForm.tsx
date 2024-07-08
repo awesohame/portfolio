@@ -66,7 +66,7 @@ export function ContactForm() {
         <Form {...form}>
             <form
                 onSubmit={form.handleSubmit(onSubmit)}
-                className="space-y-8 min-w-full"
+                className="space-y-8 min-w-full transition-all duration-300"
             >
                 <FormField
                     control={form.control}
@@ -138,7 +138,7 @@ export function ContactForm() {
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className="bg-primary-1 text-dark-1">Submit</Button>
+                <Button type="submit" className="hover:bg-primary-1 text-dark-1 bg-accent-1 transition-all duration-300">Submit</Button>
             </form>
         </Form>
     )
