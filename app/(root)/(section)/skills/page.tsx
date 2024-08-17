@@ -122,7 +122,7 @@ const Skills = () => {
                         <TabsTrigger value="Backend">Education</TabsTrigger>
                         <TabsTrigger value="Others">Skills</TabsTrigger>
                     </TabsList> */}
-                <div className="w-full xl:pl-10 flex items-center">
+                <div className="w-full xl:pl-10 flex items-center justify-center">
                     <TabsContent value="Frontend">
                         <div className="flex flex-wrap items-center justify-center gap-3">
                             {
@@ -131,12 +131,12 @@ const Skills = () => {
                                         <TooltipProvider key={idx} delayDuration={100}>
                                             <Tooltip>
                                                 <div className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-2 rounded-2xl flex justify-center items-center group">
-                                                    <TooltipTrigger className="text-8xl group-hover:text-accent-2 transition-all duration-300 cursor-default">
+                                                    <TooltipTrigger className="text-8xl group-hover:text-light-1 transition-all duration-300 cursor-default">
                                                         {skill.icon}
                                                     </TooltipTrigger>
                                                 </div>
                                                 <TooltipContent>
-                                                    <p className="text-dark-1 bg-accent-1 px-4 py-3 rounded-lg">{skill.name}</p>
+                                                    <p className="text-dark-1 bg-light-1 px-4 py-3 rounded-lg">{skill.name}</p>
                                                 </TooltipContent>
                                             </Tooltip>
                                         </TooltipProvider>
@@ -153,12 +153,12 @@ const Skills = () => {
                                         <TooltipProvider key={idx} delayDuration={100}>
                                             <Tooltip>
                                                 <div className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-2 rounded-2xl flex justify-center items-center group">
-                                                    <TooltipTrigger className="text-8xl group-hover:text-accent-2 transition-all duration-300 cursor-default">
+                                                    <TooltipTrigger className="text-8xl group-hover:text-light-1 transition-all duration-300 cursor-default">
                                                         {skill.icon}
                                                     </TooltipTrigger>
                                                 </div>
                                                 <TooltipContent>
-                                                    <p className="text-dark-1 bg-accent-1 px-4 py-3 rounded-lg">{skill.name}</p>
+                                                    <p className="text-dark-1 bg-light-1 px-4 py-3 rounded-lg">{skill.name}</p>
                                                 </TooltipContent>
                                             </Tooltip>
                                         </TooltipProvider>
@@ -174,13 +174,13 @@ const Skills = () => {
                                     return (
                                         <TooltipProvider key={idx} delayDuration={100}>
                                             <Tooltip>
-                                                <div className=" w-[150px] h-[150px] xl:w-[200px] xl:h-[200px] bg-dark-2 rounded-2xl flex justify-center items-center group">
-                                                    <TooltipTrigger className="text-8xl group-hover:text-accent-2 transition-all duration-300 cursor-default">
+                                                <div className="xl:w-[200px] xl:h-[200px] w-[150px] h-[150px] bg-dark-2 rounded-2xl flex justify-center items-center group">
+                                                    <TooltipTrigger className="text-8xl group-hover:text-light-1 transition-all duration-300 cursor-default">
                                                         {skill.icon}
                                                     </TooltipTrigger>
                                                 </div>
                                                 <TooltipContent>
-                                                    <p className="text-dark-1 bg-accent-1 px-4 py-3 rounded-lg">{skill.name}</p>
+                                                    <p className="text-dark-1 bg-light-1 px-4 py-3 rounded-lg">{skill.name}</p>
                                                 </TooltipContent>
                                             </Tooltip>
                                         </TooltipProvider>

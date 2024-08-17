@@ -22,25 +22,25 @@ export default function Home() {
                         alt="hero"
                         height={300}
                         width={300}
-                        className="hidden xl:block"
+                        className="hidden xl:block rounded-[30%]"
                     />
                     <Image
                         src="/assets/hero.png"
                         alt="hero"
                         height={200}
                         width={200}
-                        className="xl:hidden"
+                        className="xl:hidden rounded-[30%]"
                     />
                 </div>
             </div>
             <div className="h-[20%] w-full flex items-center justify-center gap-4">
-                <Link href="/resume.pdf" className="flex items-center bg-light-1 gap-2 text-black py-3 px-4 rounded-lg  hover:bg-accent-1">
-                    <MdOutlineContactPage size={30} />
-                    <span className="text-lg xl:text-2xl">Resume</span>
-                </Link>
-                <Link href="https://github.com/awesohame" className="flex items-center bg-light-1 gap-2 text-dark-1 py-3 px-4 rounded-lg hover:bg-accent-1">
+                <Link href="https://github.com/awesohame" className="flex items-center bg-light-1 gap-2 text-dark-1 py-3 px-4 rounded-lg hover:bg-accent-2">
                     <IoLogoGithub size={30} />
                     <span className="text-lg xl:text-2xl">Github</span>
+                </Link>
+                <Link href="/resume.pdf" className="flex items-center bg-light-1 gap-2 text-black py-3 px-4 rounded-lg  hover:bg-accent-2">
+                    <MdOutlineContactPage size={30} />
+                    <span className="text-lg xl:text-2xl">Resume</span>
                 </Link>
             </div>
         </section>

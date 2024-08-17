@@ -38,7 +38,7 @@ const Contact = () => {
                             href={contact.link}
                             target="_blank"
                             rel="noreferrer"
-                            className="w-1/2 p-2 flex justify-center items-center hover:text-light-2 transition-all duration-200"
+                            className="w-1/2 p-2 flex justify-center items-center hover:text-primary-1 transition-all duration-200"
                         >
                             {contact.icon}
                         </Link>
