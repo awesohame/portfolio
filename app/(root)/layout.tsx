@@ -15,7 +15,7 @@ const HomeLayout = ({ children }: { children: ReactNode }) => {
     return (
         <main className="relative flex flex-col min-h-screen">
             <Header />
-            <div className="flex-grow">{children}</div>
+            {children}
             <Footer />
         </main>
     )

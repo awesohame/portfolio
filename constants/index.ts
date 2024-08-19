@@ -1,3 +1,12 @@
+export type Project = {
+    name: string,
+    desc: string,
+    tags: string[],
+    github: string,
+    demo: string | null,
+    img: string
+}
+
 export const navLinks = [
     {
         name: 'Home',
@@ -17,7 +26,7 @@ export const navLinks = [
     },
 ];
 
-export const projects = [
+export const projects: Project[] = [
     {
         name: 'Vista',
         desc: 'A Full Stack Video Conferencing webapp',
@@ -59,3 +68,4 @@ export const projects = [
         tags: ["NextJs", "TailwindCSS"],
     },
 ]
+
