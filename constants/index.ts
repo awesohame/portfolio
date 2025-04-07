@@ -29,7 +29,26 @@ export const navLinks = [
 
 export const projects: Project[] = [
     {
-        id: 100,
+        id: 700,
+        name: 'CodeStash',
+        desc: 'This utility tool is designed specifically for developers to store code snippets for quick access.',
+        tags: ['NextJs', 'Typescript', 'MongoDB Vector Store', 'Redis', 'Docker', 'Firebase'],
+        github: 'https://github.com/awesohame/CodeStash-v2',
+        demo: 'https://codestash-demo.vercel.app/',
+        img: '/assets/projectimages/codestash.png'
+    },
+
+    {
+        id: 600,
+        name: 'GateKeeper Auth',
+        desc: 'This npm package provides components, hooks and functions for developers to manage authentication in a react app.',
+        tags: ['Typescript', 'PostgreSQL', 'NeonDB', 'React'],
+        github: 'https://github.com/orgs/Gatekeeper-Auth-Manager/repositories',
+        demo: 'https://www.npmjs.com/package/@gatekeeper-auth/react',
+        img: '/assets/projectimages/gatekeeper.png'
+    },
+    {
+        id: 500,
         name: 'Vista',
         desc: 'A Full Stack Video Conferencing webapp',
         tags: ['Nextjs', 'Typescript'],
@@ -38,7 +57,7 @@ export const projects: Project[] = [
         img: '/assets/projectimages/vista.png'
     },
     {
-        id: 200,
+        id: 400,
         name: 'Clean N Green',
         desc: 'An E-commerce webapp with the goal of promoting eco-friendly products. This project was made at the hackathon DUHacks 3.0 and secured a top 15 position out of 156 participating teams from the entire nation.',
         tags: ['React', 'Nodejs', 'Express', 'MongoDB'],
@@ -56,7 +75,7 @@ export const projects: Project[] = [
     //     img: '/assets/projects/sancbot.png',
     // },
     {
-        id: 400,
+        id: 200,
         name: "StudySprint",
         desc: "An examination portal website for multiple choice question type exams.",
         img: '/assets/projectimages/studysprint.png',
@@ -65,7 +84,7 @@ export const projects: Project[] = [
         tags: ["HTML", "CSS", "Javascript", "ExpressJS", "MySQL", "EJS"],
     },
     {
-        id: 500,
+        id: 100,
         name: "Portfolio Site",
         desc: "A portfolio website to showcase my projects and skills.",
         img: '/assets/projectimages/portfolio.png',
