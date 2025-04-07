@@ -38,7 +38,11 @@ export default function Home() {
                     <IoLogoGithub size={30} />
                     <span className="text-lg xl:text-2xl">Github</span>
                 </Link>
-                <Link href="/resume.pdf" className="flex items-center bg-light-1 gap-2 text-black py-3 px-4 rounded-lg  hover:bg-accent-2">
+                <Link href="https://drive.google.com/file/d/1_m1U5jc8BL_4ubijytMZp1G5T57_S9xN/view?usp=drive_link"
+                    className="flex items-center bg-light-1 gap-2 text-black py-3 px-4 rounded-lg  hover:bg-accent-2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
                     <MdOutlineContactPage size={30} />
                     <span className="text-lg xl:text-2xl">Resume</span>
                 </Link>

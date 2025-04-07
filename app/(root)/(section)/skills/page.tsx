@@ -1,7 +1,8 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 import { FaHtml5, FaCss3, FaReact, FaBootstrap, FaNodeJs, FaPython, } from "react-icons/fa";
-import { SiJavascript, SiRedux, SiExpress, SiMongodb, SiPostman, SiCloudinary, SiTypescript, SiCplusplus, SiScikitlearn, SiJupyter } from "react-icons/si";
+import { SiJavascript, SiRedux, SiExpress, SiMongodb, SiPostman, SiCloudinary, SiTypescript, SiCplusplus, SiScikitlearn, SiJupyter, SiDocker, SiRedis, SiPostgresql, SiSocketdotio, SiTensorflow } from "react-icons/si";
+
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
 
@@ -23,6 +24,11 @@ const skills = {
             proficiency: 5,
         },
         {
+            name: 'Typescript',
+            icon: <SiTypescript />,
+            proficiency: 3,
+        },
+        {
             name: 'React',
             icon: <FaReact />,
             proficiency: 5,
@@ -37,11 +43,11 @@ const skills = {
             icon: <RiTailwindCssFill />,
             proficiency: 5,
         },
-        {
-            name: 'Bootstrap',
-            icon: <FaBootstrap />,
-            proficiency: 2,
-        },
+        // {
+        //     name: 'Bootstrap',
+        //     icon: <FaBootstrap />,
+        //     proficiency: 2,
+        // },
         {
             name: 'Next.js',
             icon: <RiNextjsFill />,
@@ -70,17 +76,37 @@ const skills = {
             proficiency: 3,
         },
         {
+            name: 'PostgreSQL',
+            icon: <SiPostgresql />,
+            proficiency: 4,
+        },
+        {
             name: 'Postman',
             icon: <SiPostman />,
             proficiency: 4,
         },
-    ],
-    others: [
         {
-            name: 'TypeScript',
-            icon: <SiTypescript />,
+            name: 'Redis',
+            icon: <SiRedis />,
             proficiency: 3,
         },
+        {
+            name: 'Docker',
+            icon: <SiDocker />,
+            proficiency: 3,
+        },
+        {
+            name: 'Socket.io',
+            icon: <SiSocketdotio />,
+            proficiency: 3,
+        }
+    ],
+    others: [
+        // {
+        //     name: 'TypeScript',
+        //     icon: <SiTypescript />,
+        //     proficiency: 3,
+        // },
         {
             name: 'C++',
             icon: <SiCplusplus />,
@@ -96,6 +122,11 @@ const skills = {
             icon: <SiScikitlearn />,
             proficiency: 2
         },
+        {
+            name: 'Tensorflow',
+            icon: <SiTensorflow />,
+            proficiency: 2
+        }
     ],
 }
 

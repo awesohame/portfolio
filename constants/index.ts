@@ -1,4 +1,5 @@
 export type Project = {
+    id: number,
     name: string,
     desc: string,
     tags: string[],
@@ -28,6 +29,7 @@ export const navLinks = [
 
 export const projects: Project[] = [
     {
+        id: 100,
         name: 'Vista',
         desc: 'A Full Stack Video Conferencing webapp',
         tags: ['Nextjs', 'Typescript'],
@@ -36,6 +38,7 @@ export const projects: Project[] = [
         img: '/assets/projectimages/vista.png'
     },
     {
+        id: 200,
         name: 'Clean N Green',
         desc: 'An E-commerce webapp with the goal of promoting eco-friendly products. This project was made at the hackathon DUHacks 3.0 and secured a top 15 position out of 156 participating teams from the entire nation.',
         tags: ['React', 'Nodejs', 'Express', 'MongoDB'],
@@ -44,6 +47,7 @@ export const projects: Project[] = [
         img: '/assets/projectimages/cleanngreen.png'
     },
     // {
+    //     id: 300,
     //     name: "Discord JS Music bot",
     //     desc: "A Discord bot with music and basic moderation commands.",
     //     github: "https://github.com/awesohame/SancBotDJS",
@@ -52,6 +56,7 @@ export const projects: Project[] = [
     //     img: '/assets/projects/sancbot.png',
     // },
     {
+        id: 400,
         name: "StudySprint",
         desc: "An examination portal website for multiple choice question type exams.",
         img: '/assets/projectimages/studysprint.png',
@@ -60,6 +65,7 @@ export const projects: Project[] = [
         tags: ["HTML", "CSS", "Javascript", "ExpressJS", "MySQL", "EJS"],
     },
     {
+        id: 500,
         name: "Portfolio Site",
         desc: "A portfolio website to showcase my projects and skills.",
         img: '/assets/projectimages/portfolio.png',

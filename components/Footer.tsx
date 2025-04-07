@@ -2,8 +2,17 @@ import { CiMail } from "react-icons/ci";
 import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import Link from "next/link";
+import { SiCodeforces, SiLeetcode } from "react-icons/si";
 
 const contacts = [
+    {
+        icon: <SiLeetcode />,
+        link: 'https://leetcode.com/u/awesohame/',
+    },
+    {
+        icon: <SiCodeforces />,
+        link: 'https://codeforces.com/profile/awesohame',
+    },
     {
         icon: <FaXTwitter />,
         link: 'https://x.com/awesohame',
@@ -20,6 +29,7 @@ const contacts = [
         icon: <CiMail />,
         link: 'mailto:sohamaversekar777@gmail.com',
     },
+
 ]
 
 const Footer = () => {

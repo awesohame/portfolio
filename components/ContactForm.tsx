@@ -1,7 +1,8 @@
 "use client"
 
+import { useState } from "react"
 import toast from "react-hot-toast"
-
+import { Loader2 } from "lucide-react"
 import { z } from "zod"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
@@ -31,8 +32,11 @@ const formSchema = z.object({
 });
 
 export function ContactForm() {
+    const [isLoading, setIsLoading] = useState(false)
+
     async function onSubmit(values: z.infer<typeof formSchema>) {
         try {
+            setIsLoading(true)
             console.log(values);
             const response = await fetch("/api/contact", {
                 method: "POST",
@@ -49,6 +53,9 @@ export function ContactForm() {
             }
         } catch (err) {
             console.log("Err!", err);
+            toast.error("Failed to send message. Please try again.");
+        } finally {
+            setIsLoading(false)
         }
     }
 
@@ -80,9 +87,6 @@ export function ContactForm() {
                                     {...field}
                                 />
                             </FormControl>
-                            {/* <FormDescription>
-                                This is your public display name.
-                            </FormDescription> */}
                             <FormMessage />
                         </FormItem>
                     )}
@@ -131,14 +135,24 @@ export function ContactForm() {
                                     {...field}
                                 />
                             </FormControl>
-                            {/* <FormDescription>
-                                This is your public display name.
-                            </FormDescription> */}
                             <FormMessage />
                         </FormItem>
                     )}
                 />
-                <Button type="submit" className="hover:bg-opacity-85 text-dark-1 bg-primary-1 transition-all duration-300">Submit</Button>
+                <Button
+                    type="submit"
+                    disabled={isLoading}
+                    className="hover:bg-opacity-85 text-dark-1 bg-primary-1 transition-all duration-300"
+                >
+                    {isLoading ? (
+                        <>
+                            <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                            Sending...
+                        </>
+                    ) : (
+                        "Submit"
+                    )}
+                </Button>
             </form>
         </Form>
     )

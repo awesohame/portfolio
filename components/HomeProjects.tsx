@@ -29,7 +29,7 @@ const HomeProjects = () => {
                     {
                         projectHeads.map((project, idx) => {
                             return (
-                                <Card key={idx} className="xl:w-[600px] flex flex-col relative rounded-lg overflow-hidden shadow-lg">
+                                <Card key={project.id} className="xl:w-[600px] flex flex-col relative rounded-lg overflow-hidden shadow-lg">
                                     {/* Darkened Image Background */}
                                     <div className="relative">
                                         <Image
@@ -47,9 +47,9 @@ const HomeProjects = () => {
                                             <CardTitle className="xl:text-2xl text-xl">{project.name}</CardTitle>
                                             <CardDescription className="xl:m-4 m-1 xl:text-base text-xs">{project.desc}</CardDescription>
                                             <div className="flex-wrap xl:flex hidden">
-                                                {project.tags.map((tag, idx) => (
+                                                {project.tags.map((tag, i) => (
                                                     <span
-                                                        key={idx}
+                                                        key={i}
                                                         className="bg-white text-dark-1 xl:px-2 xl:py-1 px-2 py-[0.15rem] xl:text-base text-sm rounded-lg m-1 opacity-75"
                                                     >
                                                         {tag}
@@ -57,7 +57,7 @@ const HomeProjects = () => {
                                                 ))}
                                             </div>
                                             <div className="flex mt-auto bg-opacity-75 rounded-b-lg gap-3">
-                                                <TooltipProvider key={idx} delayDuration={100}>
+                                                <TooltipProvider key={project.id} delayDuration={100}>
                                                     <Tooltip>
                                                         <TooltipTrigger className="rounded-2xl flex justify-center items-center group">
                                                             <Link
